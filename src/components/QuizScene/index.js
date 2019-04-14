@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { operators, tips } from '../../constants';
-import './styles.scss';
 
 class QuizScene extends Component {
   constructor(props) {
