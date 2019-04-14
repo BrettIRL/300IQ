@@ -1,0 +1,74 @@
+$shadow: 2px 3px;
+$shadowHover: 3px 4px;
+
+.App {
+  text-align: center;
+
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    .quit-link {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 1.5em;
+      transition: color .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .operator {
+      margin: 0;
+      font-size: 2em;
+      font-weight: 500;
+      text-shadow: $shadow rgba(0, 0, 0, .1);
+    }
+
+    .number {
+      margin: 0 0 64px 0;
+      font-size: 14em;
+      font-weight: 700;
+      line-height: 1em;
+      text-shadow: $shadow rgba(0, 0, 0, .1);
+    }
+
+    button {
+      height: 40px;
+      min-width: 128px;
+      padding: 6px 12px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #fff;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      box-shadow: $shadow rgba(0, 0, 0, .3);
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        box-shadow: $shadowHover rgba(0, 0, 0, .15);
+      }
+
+      &:active {
+        box-shadow: 1px 2px rgba(0, 0, 0, .6);
+      }
+    }
+
+    .tip {
+      height: 20px;
+      padding-top: 8px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
